@@ -1,15 +1,26 @@
 // The root URL for the RESTful services
-//BE SURE TO UPDATE, MAYBE SWITCH BASED ON URL
+//be sure to update, mayeb a switch case based on environment
 var rootURL = "http://localhost:8888/api";
+
+
+//EXAMPLES
 findAll();
-//EXAMPLE AJAX
+
 function findAll() {
 	$.ajax({
 		type: 'GET',
 		url: rootURL+'/users/all',
 		dataType: "json",
 		success: function(r){
-			console.log(r);
+			
+			for (var i = r.length - 1; i >= 0; i--) {
+				console.log(r[i]);
+				var userholder = '<span>';
+				userholder += '<p>ID: '+ r[i].id + '</p>';
+				userholder += '<p>Name: '+ r[i].name + '</p>';
+				userholder += '<p>Category: ' + r[i].category + '</p>'
+				$('.userlist').append(userholder);
+			};
 		}
 	});
 }
@@ -35,3 +46,7 @@ function findById() {
 		}
 	});
 }
+
+
+//DEMO CODE
+

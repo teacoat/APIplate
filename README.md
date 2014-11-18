@@ -2,6 +2,8 @@
 
 Welcome to the teacoat api template!
 
+**Please note this is not ready for public use**
+
 This is a basic boilerplate aimed towards helping you getting an api up and running real quick-like for use in a javascript application or for external consumption.
 
 This template takes advantage of Slim PHP and jQuery, though I originally built it for use with Angular it doesn't really matter what you use to consume the data.
@@ -40,7 +42,9 @@ You can also use `$app->post()` and `$app->put()` and `$app->delete().
 
 ##Functions
 
-In functions.php you will find the PDO setup function and a few examples of different kinds of queries. The function names correlate to the string after the route definition in index.php ($app->get('/all', **'getAllUsers'**);).
+In functions.php you will find the PDO setup function and a few examples of different kinds of queries. The function names correlate to the string after the route definition in index.php.
+
+$app->get('/all', **'getAllUsers'**);
 
 You can do whatever you want really within the functions.
 
