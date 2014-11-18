@@ -19,6 +19,7 @@ All the api coding you will be doing is in /api, here you will find
 - config.php
 - index.php
 - functions.php
+- helpers.php
 
 Config.php speaks for itself, just throw your creds in there.
 
