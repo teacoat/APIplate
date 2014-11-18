@@ -42,7 +42,7 @@ You can also use `$app->post()` and `$app->put()` and `$app->delete().
 
 ##Functions
 
-In functions.php you will find the PDO setup function and a few examples of different kinds of queries. The function names correlate to the string after the route definition in index.php.
+In functions.php you will find the MySQLi setup function and a few examples of different kinds of queries. The function names correlate to the string after the route definition in index.php.
 
 $app->get('/all', **'getAllUsers'**);
 

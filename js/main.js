@@ -4,7 +4,7 @@ var rootURL = "http://localhost:8888/api";
 
 
 //EXAMPLES
-findAll();
+findById();
 
 function findAll() {
 	$.ajax({
