@@ -13,6 +13,11 @@ function getConnection() {
         return $connection;
 }
 
+function sanitize($string){
+    $cleanstring = htmlspecialchars($string);
+    return $cleanstring;
+}
+
 function querySingle($query){
         $connection = getConnection();
 
